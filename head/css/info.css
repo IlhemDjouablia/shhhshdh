@@ -1,0 +1,186 @@
+.bgth{
+    max-width: 900px;
+    width: 300%;
+    background-color: #a7c6ed;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.021);
+   
+  }
+  .bgth .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    color: #fff;
+  }
+  .bgth .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #d0a1ff);
+  }
+  .hhh form .jj{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+  }
+  form .jj .ib, form .jj .select-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+  }
+  form .ib span.det, form  .select-box span.det{
+    display: block;
+    font-size: medium;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  .jj .ib input, .jj .select-box select {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid transparent;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+
+    color: rgb(116, 114, 112);
+  }
+  .jj .ib input:focus,
+  .jj .ib input:valid,
+  .jj .select-box select:focus
+  {
+    border-color: #9b59b6;
+  }
+   form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+   }
+   form .category{
+     display: flex;
+     width: 80%;
+     margin: 14px 0 ;
+     justify-content: space-between;
+   }
+   form .category label{
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+   }
+   form .category label .dot{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+  }
+   #dot-1:checked ~ .category label .one,
+   #dot-2:checked ~ .category label .two,
+   #dot-3:checked ~ .category label .three{
+     background: #9b59b6;
+     border-color: #d9d9d9;
+   }
+   form input[type="radio"]{
+     display: none;
+   }
+   .information{
+     height: 45px;
+     margin: 35px 0
+   }
+   .information input{
+     height: 100%;
+     width: 100%;
+     border-radius: 5px;
+     border: none;
+     color: #fff;
+     font-size: 18px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     background: linear-gradient(135deg, #71b7e6, #d0a1ff);
+   }
+  .information input:hover{
+    /* transform: scale(0.99); */
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+    }
+   @media(max-width: 584px){
+   .bgth{
+    max-width: 100%;
+  }
+  form .jj .ib, form .jj .select-box{
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    form .category{
+      width: 100%;
+    }
+    .hhh form .jj{
+      max-height: 300px;
+      overflow-y: scroll;
+    }
+    .jj::-webkit-scrollbar{
+      width: 5px;
+    }
+    }
+    @media(max-width: 459px){
+    .bgth .hhh .category{
+      flex-direction: column;
+    }
+  }
+
+  input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .ib input[type="file"] + label {
+    background-color: #d0a1ff;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+  
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .ib input[type="file"] + label:hover {
+    background-color: #539bde;
+  }
+  .hadjer{
+    display: inline-block;
+    background-color:  #d0a1ff;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    font-weight: 600;
+    transition: .3s;
+    border: none;
+  }
+  
+  .hadjer:hover{
+    background-color: #539bde;
+  }
+  
+  .hadjer-link{
+    background: none;
+    padding: 0;
+    color: #d0a1ff;
+  }
+  
+  .hadjer-link:hover{
+    background-color: transparent;
+    color: var(--first-color-alt);
+  }
